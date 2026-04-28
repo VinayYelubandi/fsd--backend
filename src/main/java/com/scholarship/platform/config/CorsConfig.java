@@ -14,8 +14,8 @@ import java.util.List;
 public class CorsConfig {
 
     // Set ALLOWED_ORIGINS env var to comma-separated list in production
-    // e.g. ALLOWED_ORIGINS=https://hub-scholarships.vercel.app,https://custom-domain.com
-    @Value("${allowed.origins:http://localhost:3000,http://localhost:5173}")
+    // e.g. ALLOWED_ORIGINS=https://fsd-frontend-jc1h.vercel.app,https://custom-domain.com
+    @Value("${allowed.origins:http://localhost:3000,http://localhost:5173,https://fsd-frontend-jc1h.vercel.app}")
     private String allowedOriginsEnv;
 
     @Bean
